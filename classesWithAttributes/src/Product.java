@@ -1,4 +1,17 @@
 public class Product {
+
+    public Product (int id, String name, String description,double price, int stockAmount,String renk){
+        System.out.println("Yapıcı blog çalıştı");
+        this.id = id ;
+        this.renk = renk;
+        this.name = name;
+        this.price  = price;
+        this.description = description;
+
+    }
+    public Product (){ // overloading aşırı yükleme deniyor Product classının 1 parametreli 1 parametresiz classı var istediği şekilde çalışabilir diyoruz
+
+    }
     //Attribute /field
     //private sadece tanımlandığı blogta geçerlidir.
     private int id;
